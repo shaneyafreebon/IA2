@@ -1,0 +1,93 @@
+/* Cart page styles */
+.cart-section {
+    padding: 2rem 0 4rem;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(255,122,169,0.04);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cart-table thead tr {
+    background: #f7fbf8;
+}
+.cart-table th, .cart-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    vertical-align: middle;
+}
+.cart-table th.col-image, .cart-table td.cart-product-image {
+    width: 96px;
+    text-align: center;
+}
+.cart-product-image img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.cart-qty {
+    width: 72px;
+    padding: 0.45rem;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+}
+.cart-summary {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(255,122,169,0.04);
+}
+.cart-total {
+    font-size: 1.1rem;
+    color: var(--title-color);
+}
+
+/* Entry animation for cart rows */
+.cart-row {
+    animation: slideIn 360ms cubic-bezier(.2,.9,.2,1);
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks for cart */
+@media screen and (max-width: 768px) {
+    .cart-table th, .cart-table td { padding: 0.6rem; font-size: 0.9rem; }
+    .cart-product-image img { width: 56px; height: 56px; }
+    .cart-qty { width: 56px; }
+}
+
+/* Checkout & Payment form adjustments: make inputs longer and evenly spaced */
+#checkout-container .cart-qty,
+#checkout-container input[type="text"],
+#checkout-container input[type="number"],
+#checkout-container input[type="tel"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+}
+
+#payment-method-area { display: block; }
+#payment-method-area .cart-qty { width: 100%; }
+
+/* Two-column row for expiry + cvv: keep CVV compact while expiry flexes */
+#payment-method-area .two-col { display:flex; gap:8px; }
+#payment-method-area .two-col .cart-qty:first-child { flex: 1; }
+#payment-method-area .two-col .cart-qty:last-child { width: 120px; flex: none; }
+
+@media screen and (max-width: 520px) {
+    #payment-method-area .two-col { flex-direction: column; }
+    #payment-method-area .two-col .cart-qty:last-child { width: 100%; }
+}

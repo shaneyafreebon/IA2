@@ -1,0 +1,101 @@
+/* Contact page styles */
+:root {
+    --contact-card-bg: #ffffff;
+}
+
+.section__title { margin-bottom: 0.25rem; }
+.section__subtitle { color: rgba(0,0,0,0.6); margin-bottom:1rem }
+
+main .container { max-width:1100px; margin:0 auto; }
+
+/* Layout grid for contact page */
+@media (min-width:900px) {
+    .contact-grid {
+        display:grid;
+        grid-template-columns: 1fr 420px;
+        gap:2rem;
+        align-items:start;
+    }
+}
+
+#contactForm { display:flex; flex-direction:column; gap:12px; }
+
+/* Card wrapper for the contact form */
+.contact-card {
+    background: var(--contact-card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-card h3 { margin:0 0 6px 0 }
+
+/* Form inputs */
+#contactForm .cart-qty,
+#contactForm textarea,
+#contactForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+#contactForm textarea { resize: vertical; min-height: 100px; max-height: 220px; }
+
+/* Keep form buttons grouped and aligned */
+.contact-card .form-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.contact__other { margin-top:1.25rem; }
+.contact__other i { font-size:1.35rem; color:var(--primary-color); margin-right:0.6rem; }
+
+/* Footer adjustments inside contact page */
+.footer { margin-top:2.5rem }
+
+@media (max-width:899px) {
+    .contact-grid { display:block }
+}
+
+/* Make phone and email links use the primary (pink) accent */
+a[href^="tel:"],
+a[href^="mailto:"] {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Social icons: circular background, pink color, hover effect */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255,122,169,0.06);
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 8px;
+    transition: background 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+.social-icon i { font-size: 1.25rem; line-height:1; }
+.social-icon:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,122,169,0.12);
+}
+

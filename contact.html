@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Neya's Hairapy</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__brand">
+                <h2><span>Neya's</span> Hairapy</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="home.html" class="nav__link">Home</a></li>
+                <li><a href="home.html#products" class="nav__link">Products</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link active">Contact</a></li>
+                <li><a href="cart.html" class="nav__link">Cart</a></li>
+            </ul>
+            <div class="nav__actions">
+                <i class="ri-search-line nav__icon"></i>
+                <i class="ri-shopping-cart-line nav__icon">
+                    <span class="cart__badge">0</span>
+                </i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" style="padding:2.5rem 1.25rem;">
+            <h1 class="section__title">Contact Us</h1>
+            <p class="section__subtitle">We'd love to hear from you — here's how to reach us</p>
+
+            <div class="contact-grid" style="margin-top:1.5rem;">
+                <div>
+                    <h2>Customer Support</h2>
+                    <p>Phone: <a href="tel:+18761234567">+1 (876) 123-4567</a></p>
+                    <p>Email: <a href="mailto:info@neyashairapy.com">info@neyashairapy.com</a></p>
+                    <p>Address: 237 Old Hope Road, Kingston, Jamaica</p>
+                    <h3 style="margin-top:1rem">Business Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    <p>Sat: 10:00 AM - 4:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+
+                <aside class="contact-card">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <input placeholder="Full name" id="cname" class="cart-qty" aria-label="Full name">
+                        <input placeholder="Email" id="cemail" class="cart-qty" aria-label="Email address">
+                        <textarea id="cmessage" placeholder="Message" rows="5" class="cart-qty" aria-label="Message"></textarea>
+                        <div class="form-actions">
+                            <button type="button" id="sendContact" class="btn btn--primary">Send</button>
+                            <button type="reset" class="btn btn--outline">Clear</button>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+                <h3>Other ways to reach us</h3>
+                <p>Follow us on social media for updates, tips, and promotions.</p>
+                <p>
+                    <a class="social-icon" href="https://www.instagram.com/instagram/?hl=en"><i class="ri-instagram-line"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/facebook/"><i class="ri-facebook-line"></i></a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neya's Hairapy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../codes/home.js"></script>
+    <script src="../codes/contact.js"></script>
+</body>
+</html>

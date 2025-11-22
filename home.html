@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neya's Hairapy - Home</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    
+    <!--Remixicons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__brand">
+                <h2><span>Neya's</span> Hairapy</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#products" class="nav__link">Products</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <i class="ri-search-line nav__icon"></i>
+                <i class="ri-shopping-cart-line nav__icon">
+                    <span class="cart__badge">0</span>
+                </i>
+                <div class="user__profile">
+                    <i class="ri-user-line nav__icon" id="userIcon"></i>
+                    <span id="userName" class="user__name">Welcome!</span>
+                    <button id="logoutBtn" class="logout__btn">Logout</button>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Welcome to <span>Neya's Hairapy</span>
+                    </h1>
+                    <p class="hero__description">
+                        Discover premium hair care products that will transform your hair journey. 
+                        From nourishing shampoos to styling tools, we have everything you need for healthy, beautiful hair.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#products" class="btn btn--primary">Shop Now</a>
+                        <a href="#checkout" class="btn btn--outline">Checkout Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Marquee -->
+        <div class="promo-marquee" role="region" aria-label="Promotional banner">
+            <div class="marquee" tabindex="0">
+                <span>Neya's Hairapy</span>
+                <span>Purchase Now!</span>
+                <span>Neya's Hairapy</span>
+                <span>Purchase Now!</span>
+                <span>Neya's Hairapy</span>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="section__title">Featured Products</h2>
+                <p class="section__subtitle">Discover our best-selling hair care essentials</p>
+                
+                <div class="products__grid">
+                    <div class="product__card">
+                        <div class="product__image">
+                            <img src="../assets/cleansing cream shampoo.png" alt="Cleansing Cream Shampoo" class="product__img">
+                            <div class="product__actions">
+                                <button class="btn btn--cart">Add to Cart</button>
+                            </div>
+                            <div class="product__overlay" aria-hidden="true">
+                                <div class="product__overlay-inner">
+                                    <h4>Cleansing Cream Shampoo</h4>
+                                    <p class="overlay-price">$2,500.00</p>
+                                    <p class="overlay-desc">This ultra-creamy cleansing shampoo purifies the scalp and hydrates every strand, 
+                                    leaving hair silky, nourished, and beautifully refreshed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Cleansing Cream Shampoo</h3>
+                            <p class="product__price">$2,500.00</p>
+                            <div class="product__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>(17 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__card">
+                        <div class="product__image">
+                            <img src="../assets/argan oil leave in.png" alt="Argan Oil Leave-In Conditioning Repair Cream" class="product__img">
+                            <div class="product__actions">
+                                <button class="btn btn--cart">Add to Cart</button>
+                            </div>
+                            <div class="product__overlay" aria-hidden="true">
+                                <div class="product__overlay-inner">
+                                    <h4>Argan Oil Leave-In Conditioning Repair Cream</h4>
+                                    <p class="overlay-price">$3,295.50</p>
+                                    <p class="overlay-desc">This rich argan oil leave-in conditioning cream restores moisture, repairs damage, 
+                                    and leaves hair silky, shiny, and deeply nourished.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Argan Oil Leave-In Conditioning Repair Cream</h3>
+                            <p class="product__price">$3,295.50</p>
+                            <div class="product__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span>(89 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <div class="product__image">
+                            <img src="../assets/coconut curling cream.png" alt="Coconut Curling Cream" class="product__img">
+                            <div class="product__actions">
+                                <button class="btn btn--cart">Add to Cart</button>
+                            </div>
+                            <div class="product__overlay" aria-hidden="true">
+                                <div class="product__overlay-inner">
+                                    <h4>Coconut Curling Cream</h4>
+                                    <p class="overlay-price">$2,200.00</p>
+                                    <p class="overlay-desc">A creamy coconut curl enhancer that moisturizes, tames frizz, and leaves curls bouncy, 
+                                    defined, and irresistibly soft.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Coconut Curling Cream</h3>
+                            <p class="product__price">$2,200.00</p>
+                            <div class="product__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <span>(23 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__card">
+                        <div class="product__image">
+                            <img src="../assets/curl activator cream.png" alt="Moisturizing Curl Activator Cream" class="product__img">
+                            <div class="product__actions">
+                                <button class="btn btn--cart">Add to Cart</button>
+                            </div>
+                            <div class="product__overlay" aria-hidden="true">
+                                <div class="product__overlay-inner">
+                                    <h4>Moisturizing Curl Activator Cream</h4>
+                                    <p class="overlay-price">$2,899.00</p>
+                                    <p class="overlay-desc">A moisture-rich curl activator cream that boosts definition, enhances softness, 
+                                    and revives curls with lasting hydration and shine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Moisturizing Curl Activator Cream</h3>
+                            <p class="product__price">$2,899.00</p>
+                            <div class="product__rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span>(56 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Products -->
+                <div id="all-products" aria-hidden="true">
+                    <div class="products__grid">
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/cleansing cream shampoo.png" alt="Cleansing Cream Shampoo" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Cleansing Cream Shampoo</h4>
+                                        <p class="overlay-price">$2,500.00</p>
+                                        <p class="overlay-desc">This ultra-creamy cleansing shampoo purifies the scalp and hydrates every strand, 
+                                    leaving hair silky, nourished, and beautifully refreshed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Cleansing Cream Shampoo</h3>
+                                <p class="product__price">$2,500.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/argan oil leave in.png" alt="Argan Oil Leave-In Conditioning Repair Cream" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Argan Oil Leave-In Conditioning Repair Cream</h4>
+                                        <p class="overlay-price">$3,295.50</p>
+                                        <p class="overlay-desc">This rich argan oil leave-in conditioning cream restores moisture, repairs damage, 
+                                    and leaves hair silky, shiny, and deeply nourished.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Argan Oil Leave-In Conditioning Repair Cream</h3>
+                                <p class="product__price">$3,295.50</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/coconut curling cream.png" alt="Coconut Curling Cream" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Coconut Curling Cream</h4>
+                                        <p class="overlay-price">$2,200.00</p>
+                                        <p class="overlay-desc">A creamy coconut curl enhancer that moisturizes, tames frizz, and leaves curls bouncy, 
+                                    defined, and irresistibly soft.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Coconut Curling Cream</h3>
+                                <p class="product__price">$2,200.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/curl activator cream.png" alt="Moisturizing Curl Activator Cream" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Moisturizing Curl Activator Cream</h4>
+                                        <p class="overlay-price">$2,899.00</p>
+                                        <p class="overlay-desc">A moisture-rich curl activator cream that boosts definition, enhances softness, 
+                                    and revives curls with lasting hydration and shine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Moisturizing Curl Activator Cream</h3>
+                                <p class="product__price">$2,899.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/deep treatment masque.png" alt="Shea Butter Deep Treatment Masque" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Shea Butter Deep Treatment Masque</h4>
+                                        <p class="overlay-price">$4,500.00</p>
+                                        <p class="overlay-desc">A shea butter-infused deep treatment that combats dryness, reduces breakage, 
+                                        and leaves curls hydrated, defined, and beautifully replenished.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Shea Butter Deep Treatment Masque</h3>
+                                <p class="product__price">$4,500.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/detangler.png" alt="Coil Calm Detangler" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Coil Calm Detangler</h4>
+                                        <p class="overlay-price">$1,200.00</p>
+                                        <p class="overlay-desc">A hydrating detangler that loosens knots, reduces breakage, and leaves coils soft, defined, and easy to comb through.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Coil Calm Detangler</h3>
+                                <p class="product__price">$1,200.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/gel.png" alt="Grapeseed Strengthening Gel" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Grapeseed Strengthening Gel</h4>
+                                        <p class="overlay-price">$1,600.00</p>
+                                        <p class="overlay-desc">A lightweight grapeseed-infused strengthening gel that delivers flexible hold while 
+                                        fortifying hair for healthier, more resilient strands.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Grapeseed Strengthening Gel</h3>
+                                <p class="product__price">$1,600.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/moisturizing twist and lock gl.png" alt="Shea Butter Moisturizing Twist & Lock Gel" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Shea Butter Moisturizing Twist & Lock Gel</h4>
+                                        <p class="overlay-price">$2,850.00</p>
+                                        <p class="overlay-desc">This rich moisturizing twist & lock gel blends shea butter with nourishing hydration to define twists, 
+                                        enhance shine, and keep styles neat and touchable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Shea Butter Moisturizing Twist & Lock Gel</h3>
+                                <p class="product__price">$2,850.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/mousse.png" alt="Avocado Hydrating Mousse" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Avocado Hydrating Mousse</h4>
+                                        <p class="overlay-price">$2,300.00</p>
+                                        <p class="overlay-desc">This airy, nutrient-rich avocado mousse quenches dryness while enhancing definition with smooth, 
+                                        touchable, long-lasting hydration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Avocado Hydrating Mousse</h3>
+                                <p class="product__price">$2,300.00</p>
+                            </div>
+                        </div>
+
+                        <div class="product__card">
+                            <div class="product__image">
+                                <img src="../assets/strengthening treatment.png" alt=" Shea Butter Grow Strong Strengthening Treatment" class="product__img">
+                                <div class="product__actions">
+                                    <button class="btn btn--cart">Add to Cart</button>
+                                </div>
+                                <div class="product__overlay" aria-hidden="true">
+                                    <div class="product__overlay-inner">
+                                        <h4>Shea Butter Grow Strong Strengthening Treatment</h4>
+                                        <p class="overlay-price">$2,900.00</p>
+                                        <p class="overlay-desc">This rich shea butter treatment deeply conditions and reinforces fragile hair, leaving it stronger, 
+                                        softer, and more resilient with every use.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__name">Shea Butter Grow Strong Strengthening Treatment</h3>
+                                <p class="product__price">$2,900.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__actions">
+                    <a href="#" id="viewAllBtn" class="btn btn--outline">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+         <section class="service">
+            <div class="container">
+
+                <ul class="service-list">
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="../assets/customer-service-line.svg" alt="Service Icon">
+                        </div>
+
+                        <div class="service-content">
+                            <p class="service-item-title">
+                                Customer Service
+                            </p>
+                            <p class="service-item-text">We're dedicated to delivering exceptional support and guidance for all your hair care needs.</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="../assets/box-3-line.svg" alt="Service Icon">
+                        </div>
+
+                        <div class="service-content">
+                            <p class="service-item-title">
+                                Free Returns
+                            </p>
+                            <p class="service-item-text">30 Days Return Policy</p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="../assets/bank-card-line.svg" alt="Service Icon">
+                        </div>
+
+                        <div class="service-content">
+                            <p class="service-item-title">
+                                Secure Payment
+                            </p>
+                            <p class="service-item-text">100% Security Guaranteed</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+         </section>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3><span>Neya's</span> Hairapy</h3>
+                    <p>Your trusted partner for healthy, beautiful hair. Quality products since 2025.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.html#products">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact Info</h4>
+                    <p><i class="ri-phone-line"></i> +1(876) 123-4567</p>
+                    <p><i class="ri-mail-line"></i> info@neyashairapy.com</p>
+                    <p><i class="ri-map-pin-line"></i> 237 Old Hope Road, Kingston, Jamaica</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Neya's Hairapy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="../codes/home.js"></script>
+</body>
+</html>

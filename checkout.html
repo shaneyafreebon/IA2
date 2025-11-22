@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout - Neya's Hairapy</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__brand"><h2><span>Neya's</span> Hairapy</h2></div>
+            <ul class="nav__menu">
+                <li><a href="home.html" class="nav__link">Home</a></li>
+                <li><a href="home.html#products" class="nav__link">Products</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="cart.html" class="nav__link active">Cart</a></li>
+            </ul>
+            <div class="nav__actions">
+                <i class="ri-shopping-cart-line nav__icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container cart-section">
+            <h1 class="section__title">Checkout</h1>
+
+            <div id="checkout-container">
+            </div>
+
+            <div style="margin-top:18px; display:flex; gap:8px; align-items:center;">
+                <button id="clearAllBtn" class="btn btn--outline">Clear All</button>
+                <button id="addPaymentBtn" class="btn btn--outline">Add Payment Method</button>
+                <button id="closeBtn" class="btn btn--outline">Close</button>
+            </div>
+            
+            <!-- Payment method area -->
+            <div id="payment-method-area" style="display:none; margin-top:12px; max-width:720px;">
+                <h3>Payment Method</h3>
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                    <input id="pmCardName" placeholder="Cardholder name" class="cart-qty">
+                    <input id="pmCardNumber" placeholder="Card number (no spaces)" class="cart-qty">
+                    <div style="display:flex;gap:8px;">
+                        <input id="pmExpiry" placeholder="MM/YY" style="flex:1" class="cart-qty">
+                        <input id="pmCvv" placeholder="CVV" style="width:120px" class="cart-qty">
+                    </div>
+                    <input id="pmBillingAddress" placeholder="Billing address" class="cart-qty">
+                </div>
+                <div style="margin-top:8px; display:flex; gap:8px;">
+                    <button id="savePaymentBtn" class="btn btn--primary">Save Payment Method</button>
+                    <button id="cancelPaymentBtn" class="btn btn--outline">Cancel</button>
+                </div>
+                <div id="savedPayments" style="margin-top:12px"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2025 Neya's Hairapy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../codes/home.js"></script>
+    <script src="../codes/checkout.js"></script>
+</body>
+</html>

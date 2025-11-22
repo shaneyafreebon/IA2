@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Neya's Hairapy</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__brand">
+                <h2><span>Neya's</span> Hairapy</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="home.html" class="nav__link">Home</a></li>
+                <li><a href="home.html#products" class="nav__link">Products</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                <li><a href="home.html#checkout" class="nav__link">Checkout</a></li>
+            </ul>
+            <div class="nav__actions">
+                <i class="ri-search-line nav__icon"></i>
+                <i class="ri-shopping-cart-line nav__icon">
+                    <span class="cart__badge">0</span>
+                </i>
+                <div class="user__profile">
+                    <i class="ri-user-line nav__icon" id="userIcon"></i>
+                    <span id="userName" class="user__name">Welcome!</span>
+                    <button id="logoutBtn" class="logout__btn">Logout</button>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container cart-section">
+            <h1 class="section__title">Your Cart</h1>
+            <div id="cart-container">
+                <!-- Cart table will be rendered here by cart.js -->
+            </div>
+            <div class="cart-actions">
+                <a href="home.html#products" class="btn btn--outline">Continue Shopping</a>
+                <button id="checkoutBtn" class="btn btn--primary">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neya's Hairapy. All rights reserved.</p>
+        </div>
+    </footer>
+
+      <script src="../codes/home.js"></script>
+    <script src="../codes/cart.js"></script>
+</body>
+</html>
